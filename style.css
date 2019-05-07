@@ -103,3 +103,26 @@ p {
 
 
 /****BØRN OG UNGE SLUT****/
+
+/****GALLERI****/
+
+#galleri .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#galleri .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    border: solid 5px black;
+}
+
+#galleri .col1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    border: solid 5px black;
+}
