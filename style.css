@@ -31,6 +31,18 @@ header nav a {
 
 }
 
+#menu img {
+    display: none;
+}
+
+
+
+#logo1 img {
+    display: none;
+
+
+}
+
 /*MENU FULD*/
 
 
@@ -51,7 +63,7 @@ header nav a {
     ul {
         display: flex;
         flex-wrap: nowrap;
-        padding: 0;
+        padding: 10px;
         justify-content: space-around;
         background-color: white;
 
@@ -63,21 +75,23 @@ header nav a {
 
     }
 
+    #logo img {
+        position: absolute;
+        width: 70px;
+        top: 0px;
+
+    }
+
+    #logo1 img {
+        display: block;
+        position: absolute;
+        width: 5rem;
+        left: 45%;
+    }
+
 }
 
-#logo img {
-    position: absolute;
-    width: 70px;
-    /*    height: 70px;*/
-    top: 0px;
-    visibility: hidden;
-}
 
-#logo1 img {
-    position: absolute;
-    width: 5rem;
-    left: 45%;
-}
 
 
 /*SECTION*/
@@ -167,6 +181,20 @@ p {
     color: #0D0D0D;
 }
 
+a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: #286eaf;
+}
+
+a:hover {
+    color: #0D0D0D;
+}
+
+
+
 /****GENERALLE INDSTILLINGER SLUT*****/
 
 /****OM****/
@@ -251,4 +279,3 @@ p {
 
 
 /****NYHEDER SLUT****/
-> > > > > > > origin/master
