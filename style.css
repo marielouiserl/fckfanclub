@@ -94,11 +94,17 @@ header nav a {
 
 
 
-/*SECTION*/
+/*SECTION KNAPPER*/
 
 #sectionwrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(pictures/background1.jpg);
+
+
 
 }
 
@@ -114,16 +120,61 @@ header nav a {
 }
 
 .knap {
-    flex-basis: 200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-basis: 400px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #286EAF;
     text-align: center;
     color: #ffffff;
     font-family: sans-serif;
+    margin-top: 30px;
 
 
 }
+
+.knap:hover {
+    background-image: url(pictures/kampinfo%20image.png);
+
+}
+
+#sectionwrapper_spons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    align-items: center;
+
+
+}
+
+
+/*SPONSORATER*/
+
+.carlsberg {
+    flex-basis: 250px;
+
+}
+
+.unibet {
+    flex-basis: 280px;
+}
+
+.fanshop {
+    flex-basis: 310px;
+}
+
+.tandlaegerne {
+    display: flex;
+    flex-basis: 240px;
+
+}
+
+
+
+
+
 
 /****GENERALLE INDSTILLINGER SLUT*****/
 
