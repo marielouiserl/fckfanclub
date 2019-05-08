@@ -85,13 +85,15 @@ a:hover {
 #menu {
     list-style-type: none;
     transition: transform .3s;
-    position: absolute;
+    /*    position: absolute;*/
     width: 100%;
-    border-top: solid 3px #286eaf;
-    border-bottom: solid 3px #286eaf;
+    border-top: solid 1px #286eaf;
+    border-bottom: solid 1px #286eaf;
 }
 
+
 li {}
+
 
 header nav a {
 
@@ -165,12 +167,33 @@ header nav a {
 
 }
 
+/*SPLASH*/
+
+#splash {
+    background-size: cover;
+    max-width: none;
+    background-position: 49% 0%;
+    background-image: url(img/billedeparken.jpg);
+    margin-top: 0;
+    top: 0;
+}
+
+#splash img {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
 
 
 
 /*SECTION KNAPPER*/
 
-#sectionwrapper {
+#sectionwrapper1 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -184,7 +207,7 @@ header nav a {
 
 /*KNAPPER*/
 
-.col {
+#sectionwrapper1 .col {
     display: flex;
     width: 100%;
     justify-content: space-around;
