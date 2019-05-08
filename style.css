@@ -1,16 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-img {
-    width: 100%;
-}
-
-
 /*BURGER MENU*/
 
 .hidden {
@@ -123,3 +110,145 @@ header nav a {
 
 
 }
+
+=======figure {
+    margin: 0;
+    /*
+    width: 25vw;
+    height: 20vw;
+*/
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+body {
+    margin: 0;
+}
+
+section,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #286EAF;
+    border-bottom: solid 4px #286EAF;
+    /*
+    margin: 10px;
+    padding: 20px;
+*/
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #286EAF;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #286EAF;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #0D0D0D;
+}
+
+/****GENERALLE INDSTILLINGER SLUT*****/
+
+/****OM****/
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*    border: solid 10px black;*/
+    margin: 0.5rem;
+    padding: 0 0;
+}
+
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    border: solid 4px #286EAF;
+}
+
+#om figure {
+    width: 520px;
+    height: 450px;
+}
+
+/****OM SLUT****/
+
+/****BØRN OG UNGE****/
+
+#unge .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*    border: solid 10px black;*/
+    margin: 0.5rem;
+    padding: 0 0;
+}
+
+
+#unge .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    border: solid 4px #286EAF;
+}
+
+
+/****BØRN OG UNGE SLUT****/
+
+/****GALLERI****/
+
+#galleri .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#galleri .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    border: solid 4px #286EAF;
+}
+
+#galleri .col1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    border: solid 4px #286EAF;
+}
+
+/****GALLERI SLUT****/
+
+/****NYHEDER****/
+
+
+
+
+
+/****NYHEDER SLUT****/
+> > > > > > > origin/master
