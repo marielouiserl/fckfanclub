@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*BURGER MENU*/
+
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    position: absolute;
+    width: 100%;
+}
+
+li {}
+
+header nav a {
+
+
+    text-decoration: inherit;
+    /*    text-align: center;*/
+    font-family: sans-serif;
+
+
+
+}
+
+/*MENU FULD*/
+
+
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+
+
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
+        justify-content: space-around;
+        background-color: white;
+
+    }
+
+    li {
+        flex-direction: row;
+
+
+    }
+
+}
+
+#logo img {
+    position: absolute;
+    width: 70px;
+    /*    height: 70px;*/
+    top: 0px;
+    visibility: hidden;
+}
+
+#logo1 img {
+    position: absolute;
+    width: 5rem;
+    left: 45%;
+}
+
+
+/*SECTION*/
+
+#sectionwrapper {
+    display: flex;
+    width: 100%;
+
+}
+
+/*KNAPPER*/
+
+.col {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+
+
+}
+
+.knap {
+    flex-basis: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #286EAF;
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+
+
+}
