@@ -5,8 +5,10 @@
 
 figure {
     margin: 0;
+    /*
     width: 25vw;
     height: 20vw;
+*/
     display: flex;
     flex-wrap: nowrap;
 }
@@ -32,6 +34,7 @@ h1 {
     font-weight: bold;
     font-size: 3rem;
     color: #286EAF;
+    border-bottom: solid 4px #286EAF;
     /*
     margin: 10px;
     padding: 20px;
@@ -76,9 +79,13 @@ p {
     flex-basis: 300px;
     margin: 2.4rem;
     padding: 1rem;
-    border: solid 5px black;
+    border: solid 4px #286EAF;
 }
 
+#om figure {
+    width: 520px;
+    height: 450px;
+}
 
 /****OM SLUT****/
 
@@ -98,7 +105,7 @@ p {
     flex-basis: 300px;
     margin: 2.4rem;
     padding: 1rem;
-    border: solid 5px black;
+    border: solid 4px #286EAF;
 }
 
 
@@ -116,7 +123,7 @@ p {
     flex-basis: 300px;
     margin: 2.4rem;
     padding: 1rem;
-    border: solid 5px black;
+    border: solid 4px #286EAF;
 }
 
 #galleri .col1 {
@@ -124,5 +131,5 @@ p {
     flex-basis: 300px;
     margin: 2.4rem;
     padding: 1rem;
-    border: solid 5px black;
+    border: solid 4px #286EAF;
 }
