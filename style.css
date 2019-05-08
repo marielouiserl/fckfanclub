@@ -255,7 +255,6 @@ header nav a {
     /*    border: solid 10px black;*/
     /*    margin: 0.5rem;*/
     padding: 0 0;
-    border: solid 4px #5095bf;
     background-image: url(img/billedebl%C3%A5.png);
 
 }
@@ -319,7 +318,6 @@ header nav a {
 #galleri .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    border: solid 4px #5095bf;
 }
 
 #galleri .col {
