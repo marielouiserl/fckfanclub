@@ -1,3 +1,74 @@
+/****GENERALLE INDSTILLINGER SLUT*****/
+
+figure {
+    margin: 0;
+    /*
+    display: flex;
+    flex-wrap: nowrap;
+*/
+}
+
+body {
+    margin: 0;
+}
+
+
+section,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #286eaf;
+    /*    border-bottom: solid 4px #5095bf;*/
+
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #286EAF;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #286EAF;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #0D0D0D;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: #286eaf;
+}
+
+a:hover {
+    color: #0D0D0D;
+}
+
+/****GENERALLE INDSTILLINGER SLUT*****/
+
+
 /*BURGER MENU*/
 
 .hidden {
@@ -16,6 +87,8 @@
     transition: transform .3s;
     position: absolute;
     width: 100%;
+    border-top: solid 3px #286eaf;
+    border-bottom: solid 3px #286eaf;
 }
 
 li {}
@@ -76,7 +149,7 @@ header nav a {
     }
 
     #logo img {
-        position: absolute;
+        /*        position: absolute;*/
         width: 70px;
         top: 0px;
 
@@ -86,7 +159,8 @@ header nav a {
         display: block;
         position: absolute;
         width: 5rem;
-        left: 45%;
+        left: 47.5%;
+        top: 0;
     }
 
 }
@@ -114,9 +188,6 @@ header nav a {
     display: flex;
     width: 100%;
     justify-content: space-around;
-
-
-
 }
 
 .knap {
@@ -171,82 +242,19 @@ header nav a {
 
 }
 
+<<<<<<< HEAD
 
 
 
 
 
 /****GENERALLE INDSTILLINGER SLUT*****/
-
-figure {
-    margin: 0;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-body {
-    margin: 0;
-}
-
-section,
-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+=======
+/****SPLASH****/
+>>>>>>> origin/master
 
 
-img {
-    width: 100%;
-}
-
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    color: #286EAF;
-    border-bottom: solid 4px #286EAF;
-    /*
-    margin: 10px;
-    padding: 20px;
-*/
-}
-
-h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: lighter;
-    font-size: 2rem;
-    color: #286EAF;
-}
-
-h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
-    color: #286EAF;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: lighter;
-    color: #0D0D0D;
-}
-
-a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-
-    color: #286eaf;
-}
-
-a:hover {
-    color: #0D0D0D;
-}
-
-
-
-/****GENERALLE INDSTILLINGER SLUT*****/
+/****SPLASH SLUT****/
 
 /****OM****/
 
@@ -256,6 +264,7 @@ a:hover {
     /*    border: solid 10px black;*/
     margin: 0.5rem;
     padding: 0 0;
+    border: solid 4px #5095bf;
 }
 
 
@@ -264,12 +273,19 @@ a:hover {
     flex-basis: 300px;
     margin: 2.4rem;
     padding: 1rem;
-    border: solid 4px #286EAF;
+    /*    border: solid 4px #286EAF;*/
+    background-color: #5095bf;
 }
 
 #om figure {
+    display: flex;
+    flex-wrap: nowrap;
     width: 520px;
     height: 450px;
+}
+
+#om p {
+    color: #fbfbfb;
 }
 
 /****OM SLUT****/
@@ -279,7 +295,7 @@ a:hover {
 #unge .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    /*    border: solid 10px black;*/
+    border: solid 4px #5095bf;
 
 }
 
@@ -291,10 +307,16 @@ a:hover {
     flex-basis: 300px;
     margin: 2.4rem;
     padding: 1rem;
-    border: solid 4px #286EAF;
+    background-color: #5095bf;
 }
 
+#unge p {
+    color: #fbfbfb;
+}
 
+#unge h2 {
+    color: #fbfbfb;
+}
 
 /****BØRN OG UNGE SLUT****/
 
@@ -302,23 +324,30 @@ a:hover {
 
 #galleri .sectionwrapper {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    border: solid 4px #5095bf;
 }
 
 #galleri .col {
     flex-grow: 1;
-    flex-basis: 300px;
-    margin: 2.4rem;
-    padding: 1rem;
-    border: solid 4px #286EAF;
+    flex-basis: 1000px;
+    margin: 30px;
+    padding: 1px;
+    background-color: #5095bf;
+    padding: 15px;
 }
 
 #galleri .col1 {
-    flex-grow: 1;
+    flex-grow: 3;
     flex-basis: 300px;
-    margin: 2.4rem;
-    padding: 1rem;
-    border: solid 4px #286EAF;
+    margin: 20px;
+    padding: 0px;
+    background-color: #5095bf;
+    padding: 15px;
+}
+
+#galleri h2 {
+    color: #fbfbfb;
 }
 
 /****GALLERI SLUT****/
@@ -330,3 +359,10 @@ a:hover {
 
 
 /****NYHEDER SLUT****/
+
+
+@media only screen and (min-width:700px) {
+    #splash {
+        background-position: 50% 0%;
+    }
+}
