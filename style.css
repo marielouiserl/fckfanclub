@@ -63,7 +63,7 @@ header nav a {
     ul {
         display: flex;
         flex-wrap: nowrap;
-        padding: 0;
+        padding: 10px;
         justify-content: space-around;
         background-color: white;
 
