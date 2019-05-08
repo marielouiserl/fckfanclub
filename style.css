@@ -344,6 +344,14 @@ header nav a {
     color: #fbfbfb;
 }
 
+#galleri .col:hover {
+    background-image: url(pictures/kampinfo%20image.png);
+}
+
+#galleri .col1:hover {
+    background-image: url(pictures/kampinfo%20image.png);
+}
+
 /****GALLERI SLUT****/
 
 /****NYHEDER****/
