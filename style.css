@@ -111,12 +111,10 @@ header nav a {
 
 }
 
-=======figure {
+/****GENERALLE INDSTILLINGER SLUT*****/
+
+figure {
     margin: 0;
-    /*
-    width: 25vw;
-    height: 20vw;
-*/
     display: flex;
     flex-wrap: nowrap;
 }
