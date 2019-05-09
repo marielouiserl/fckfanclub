@@ -1,3 +1,5 @@
+#menu {}
+
 /****GENERALLE INDSTILLINGER SLUT*****/
 
 figure {
@@ -30,7 +32,6 @@ h1 {
     font-weight: bold;
     font-size: 3rem;
     color: #286eaf;
-    border-bottom: solid 4px #286eaf;
     margin: 10px;
 
 }
@@ -133,7 +134,7 @@ a:hover {
         flex-wrap: nowrap;
         padding: 10px;
         justify-content: space-around;
-        background-color: white;
+        background-color: #fbfbfb;
 
     }
 
@@ -195,6 +196,17 @@ a:hover {
 
     #menuknap {
         display: inline-block;
+        margin: 5px;
+        font-family: sans-serif;
+        font-size: 20px;
+
+    }
+
+    #splash #menuknap {
+        display: inline-block;
+        color: #0d0d0d;
+        background-color: #fbfbfb;
+
     }
 
     #menu {
@@ -204,6 +216,9 @@ a:hover {
         border-top: solid 1px #286eaf;
         border-bottom: solid 1px #286eaf;
         background-color: white;
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
     }
 
 
@@ -262,8 +277,17 @@ a:hover {
 
 }
 
+#sectionwrapper1 a {
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+
+
 .knap:hover {
     background-image: url(pictures/kampinfo%20image.png);
+    color: #0d0d0d;
+    text-decoration: none;
 
 }
 
@@ -371,6 +395,11 @@ a:hover {
 
 .sociallogo {
     flex-basis: 80px;
+    filter: grayscale(100%)
+}
+
+.sociallogo:hover {
+    filter: none;
 }
 
 .footerlogo {
@@ -380,7 +409,12 @@ a:hover {
     flex-wrap: wrap;
     flex-basis: 33%;
     justify-content: space-around;
+    filter: grayscale(80%);
 
+}
+
+.footerlogo:hover {
+    filter: none;
 }
 
 .footerlogo img {
@@ -410,6 +444,7 @@ a:hover {
     font-size: 1rem;
     font-weight: bold;
     color: #fbfbfb;
+    flex-basis: 400px;
 }
 
 #sectionwrapper1 a:hover {
@@ -418,19 +453,15 @@ a:hover {
 
 /****FORSIDE SLUT****/
 
-
 /****OM****/
 
 #om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    /*    border: solid 10px black;*/
-    /*    margin: 0.5rem;*/
     padding: 0 0;
     background-image: url(img/billedebl%C3%A5.png);
 
 }
-
 
 #om .col {
     flex-grow: 1;
@@ -443,10 +474,8 @@ a:hover {
 
 
 #om figure {
-
-
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 400px;
     height: 400px;
     margin-left: auto;
@@ -454,7 +483,6 @@ a:hover {
 }
 
 #om p {
-
     color: #fbfbfb;
 }
 
@@ -496,6 +524,16 @@ a:hover {
 
 /****GALLERI****/
 
+
+#galleri .sectionwrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/billedebl%C3%A5.png);
+    padding-top: 30px;
+
+}
+
 #galleri .sectionwrapper1 {
     display: flex;
     flex-wrap: wrap;
@@ -503,16 +541,7 @@ a:hover {
 
 }
 
-#galleri .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(img/billedebl%C3%A5.png);
-
-}
-
 #galleri .col {
-    flex-basis: 80vw;
-    /*    flex-grow: 1;*/
     padding: 1px;
     background-color: #5095bf;
     padding: 15px;
@@ -534,7 +563,11 @@ a:hover {
     color: #fbfbfb;
 }
 
+
+
+
 /*
+
 #galleri .col:hover {
     background-image: url(pictures/kampinfo%20image.png);
 }
@@ -575,11 +608,99 @@ a:hover {
     justify-content: space-between;
 }
 
+#nyheder .stor_col {
+    flex-grow: 1;
+    flex-basis: 450px;
+    margin: 30px;
+    padding: 1px;
+    background-color: #5095bf;
+    padding: 15px;
+}
 
+#nyheder .col {
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin: 20px;
+    padding: 0px;
+    background-color: #5095bf;
+    padding: 15px;
+}
 
+#nyheder #sectionwrapper {
+    background-image: url(img/billedebl%C3%A5.png);
+}
+
+#nyheder p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    color: #fbfbfb;
+}
+
+#nyheder a {
+    text-decoration: none;
+}
+
+#nyheder .stor_wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+#nyheder img {
+    width: 100%;
+    height: 100%;
+}
 
 /****NYHEDER SLUT****/
 
+/****ARTIKEL 1****/
+#aretsspiller ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    background: #5095bf;
+    color: #fbfbfb;
+}
+
+#aretsspiller .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*    border: solid 10px black;*/
+    /*    margin: 0.5rem;*/
+    padding: 0 0;
+    background-image: url(img/billedebl%C3%A5.png);
+
+}
+
+
+#aretsspiller .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    /*    border: solid 4px #286EAF;*/
+    background-color: #5095bf;
+}
+
+#aretsspiller figure {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 520px;
+    height: 450px;
+}
+
+#aretsspiller p {
+    color: #fbfbfb;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+/****ARTIKEL 1 SLUT****/
 
 /****TIFO****/
 
@@ -613,27 +734,32 @@ a:hover {
 
 }
 
-/*
-#tifo figure {
+#tifo .col1 figure {
     display: flex;
     flex-wrap: nowrap;
-    height: 500px;
+    height: 700px;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
-*/
 
 #tifo p {
 
     color: #fbfbfb;
 }
 
-#tifo h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: lighter;
-    font-size: 2rem;
+#tifo .col h2 {
     color: #fbfbfb;
     border-bottom: solid 3px #fbfbfb;
 }
 
+
 /****TIFO SLUT****/
+
+@media only screen and (max-width: 750px) {
+
+    #galleri .col {
+        margin: 10px;
+    }
+}
