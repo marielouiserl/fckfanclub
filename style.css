@@ -377,6 +377,21 @@ header nav a {
 
 /****NYHEDER****/
 
+#nyheder .stor_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding: 0 0;
+    justify-content: space-around;
+}
+
+#nyheder .lille_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding: 0 0;
+    justify-content: space-between;
+}
 
 
 
