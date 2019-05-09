@@ -541,11 +541,95 @@ header nav a {
     justify-content: space-between;
 }
 
+#nyheder .stor_col {
+    flex-grow: 1;
+    flex-basis: 450px;
+    margin: 30px;
+    padding: 1px;
+    background-color: #5095bf;
+    padding: 15px;
+}
 
+#nyheder .col {
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin: 20px;
+    padding: 0px;
+    background-color: #5095bf;
+    padding: 15px;
+}
 
+#nyheder #sectionwrapper {
+    background-image: url(img/billedebl%C3%A5.png);
+}
+
+#nyheder p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    color: #fbfbfb;
+}
+
+#nyheder a {
+    text-decoration: none;
+}
+
+#nyheder .stor_wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+#nyheder img {
+    width: 100%;
+    height: 100%;
+}
 
 /****NYHEDER SLUT****/
 
+/****ARTIKEL 1****/
+#aretsspiller ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+#aretsspiller .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*    border: solid 10px black;*/
+    /*    margin: 0.5rem;*/
+    padding: 0 0;
+    background-image: url(img/billedebl%C3%A5.png);
+
+}
+
+
+#aretsspiller .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    /*    border: solid 4px #286EAF;*/
+    background-color: #fbfbfb;
+}
+
+#aretsspiller figure {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 520px;
+    height: 450px;
+}
+
+#aretsspiller p {
+
+    color: #0d0d0d;
+}
+
+/****ARTIKEL 1 SLUT****/
 
 /****TIFO****/
 
