@@ -15,9 +15,9 @@ body {
 
 section,
 footer {
-
     margin: 0 auto;
 }
+
 
 
 img {
@@ -30,7 +30,8 @@ h1 {
     font-weight: bold;
     font-size: 3rem;
     color: #286eaf;
-    /*    border-bottom: solid 4px #5095bf;*/
+    border-bottom: solid 4px #286eaf;
+    margin: 10px;
 
 }
 
@@ -58,7 +59,6 @@ a {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-
     color: #286eaf;
 }
 
@@ -379,6 +379,22 @@ header nav a {
 
 /****GENERALLE INDSTILLINGER SLUT*****/
 
+/****FORSIDE****/
+
+#sectionwrapper1 a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fbfbfb;
+}
+
+#sectionwrapper1 a:hover {
+    color: #0D0D0D;
+}
+
+/****FORSIDE SLUT****/
+
+
 /****OM****/
 
 #om .sectionwrapper {
@@ -398,19 +414,28 @@ header nav a {
     margin: 2.4rem;
     padding: 1rem;
     /*    border: solid 4px #286EAF;*/
-    background-color: #fbfbfb;
+    background-color: #5095bf;
 }
 
+
 #om figure {
+
+
     display: flex;
     flex-wrap: nowrap;
-    width: 520px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #om p {
 
-    color: #0d0d0d;
+    color: #fbfbfb;
+}
+
+#om h2 {
+    color: #fbfbfb;
 }
 
 /****OM SLUT****/
@@ -447,18 +472,29 @@ header nav a {
 
 /****GALLERI****/
 
+#galleri .sectionwrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/billedebl%C3%A5.png);
+
+}
+
 #galleri .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    background-image: url(img/billedebl%C3%A5.png);
+
 }
 
 #galleri .col {
-    flex-grow: 1;
-    flex-basis: 1000px;
-    margin: 30px;
+    flex-basis: 80vw;
+    /*    flex-grow: 1;*/
     padding: 1px;
     background-color: #5095bf;
     padding: 15px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
 }
 
 #galleri .col1 {
@@ -474,6 +510,7 @@ header nav a {
     color: #fbfbfb;
 }
 
+/*
 #galleri .col:hover {
     background-image: url(pictures/kampinfo%20image.png);
 }
@@ -481,11 +518,38 @@ header nav a {
 #galleri .col1:hover {
     background-image: url(pictures/kampinfo%20image.png);
 }
+*/
+
+#galleri a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #fbfbfb;
+}
+
+#galleri a:hover {
+    color: #0D0D0D;
+}
 
 /****GALLERI SLUT****/
 
 /****NYHEDER****/
 
+#nyheder .stor_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding: 0 0;
+    justify-content: space-around;
+}
+
+#nyheder .lille_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding: 0 0;
+    justify-content: space-between;
+}
 
 
 
@@ -493,8 +557,59 @@ header nav a {
 /****NYHEDER SLUT****/
 
 
-@media only screen and (min-width:700px) {
-    #splash {
-        background-position: 50% 0%;
-    }
+/****TIFO****/
+
+#tifo .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*    border: solid 10px black;*/
+    /*        margin: 0.5rem;*/
+    padding: 0 0;
+    background-image: url(img/billedebl%C3%A5.png);
+
 }
+
+
+#tifo .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin: 2.4rem;
+    padding: 1rem;
+    /*    border: solid 4px #286EAF;*/
+    background-color: #5095bf;
+}
+
+#tifo .col1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    /*    border: solid 4px #286EAF;*/
+    background-color: #5095bf;
+
+}
+
+/*
+#tifo figure {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 500px;
+    width: 400px;
+
+}
+*/
+
+#tifo p {
+
+    color: #fbfbfb;
+}
+
+#tifo h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #fbfbfb;
+    border-bottom: solid 3px #fbfbfb;
+}
+
+/****TIFO SLUT****/
