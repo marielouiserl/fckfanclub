@@ -400,13 +400,10 @@ header nav a {
 #om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    /*    border: solid 10px black;*/
-    /*    margin: 0.5rem;*/
     padding: 0 0;
     background-image: url(img/billedebl%C3%A5.png);
 
 }
-
 
 #om .col {
     flex-grow: 1;
@@ -419,10 +416,8 @@ header nav a {
 
 
 #om figure {
-
-
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 400px;
     height: 400px;
     margin-left: auto;
@@ -430,7 +425,6 @@ header nav a {
 }
 
 #om p {
-
     color: #fbfbfb;
 }
 
@@ -472,12 +466,6 @@ header nav a {
 
 /****GALLERI****/
 
-#galleri .sectionwrapper1 {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(img/billedebl%C3%A5.png);
-
-}
 
 #galleri .sectionwrapper {
     display: flex;
@@ -510,7 +498,9 @@ header nav a {
     color: #fbfbfb;
 }
 
+
 /*
+
 #galleri .col:hover {
     background-image: url(pictures/kampinfo%20image.png);
 }
@@ -589,27 +579,20 @@ header nav a {
 
 }
 
-/*
-#tifo figure {
+#tifo .col1 figure {
     display: flex;
     flex-wrap: nowrap;
-    height: 500px;
+    height: 700px;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
-*/
 
 #tifo p {
 
     color: #fbfbfb;
 }
 
-#tifo h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: lighter;
-    font-size: 2rem;
-    color: #fbfbfb;
-    border-bottom: solid 3px #fbfbfb;
-}
 
 /****TIFO SLUT****/
