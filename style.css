@@ -15,9 +15,9 @@ body {
 
 section,
 footer {
-
     margin: 0 auto;
 }
+
 
 
 img {
@@ -30,7 +30,8 @@ h1 {
     font-weight: bold;
     font-size: 3rem;
     color: #286eaf;
-    /*    border-bottom: solid 4px #5095bf;*/
+    border-bottom: solid 4px #286eaf;
+    margin: 10px;
 
 }
 
@@ -58,7 +59,6 @@ a {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-
     color: #286eaf;
 }
 
@@ -69,56 +69,32 @@ a:hover {
 /****GENERALLE INDSTILLINGER SLUT*****/
 
 
-/*BURGER MENU*/
 
-.hidden {
-    /*    display: none;*/
-    /*    transform: scale(0);*/
-    transform: translateX(-100%);
-    opacity: 0;
-}
+/*SPLASH*/
 
-#menuknap {
-    display: inline-block;
-}
+#splash {
 
-#menu {
-    list-style-type: none;
-    transition: transform .3s;
-    /*    position: absolute;*/
+    background-size: cover;
+    max-width: none;
     width: 100%;
-    border-top: solid 1px #286eaf;
-    border-bottom: solid 1px #286eaf;
+    height: 300px;
+    background-position: 49% 0%;
+    background-image: url(pictures/splashbilledemidlertidigt.jpg);
+    margin-top: 0;
+    top: 0;
 }
 
 
-li {}
-
-
-header nav a {
-
-
-    text-decoration: inherit;
-    /*    text-align: center;*/
-    font-family: sans-serif;
-
-
-
+#splash img {
+    visibility: hidden;
 }
-
-#menu img {
-    display: none;
-}
-
-
 
 #logo1 img {
     display: none;
-
-
 }
 
-/*MENU FULD*/
+
+/*INDSTILLINGER FULD SKÆRM*/
 
 
 
@@ -131,6 +107,13 @@ header nav a {
     #menu.hidden {
         transform: translateX(0);
         opacity: 1;
+        height: 15px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+
 
     }
 
@@ -151,9 +134,8 @@ header nav a {
     }
 
     #logo img {
-        /*        position: absolute;*/
         width: 70px;
-        top: 0px;
+        top: 10px;
 
     }
 
@@ -162,27 +144,57 @@ header nav a {
         position: absolute;
         width: 5rem;
         left: 47.5%;
+        top: 10px;
+        ;
+    }
+
+    #splash {
+        background-size: cover;
+        max-width: none;
+        height: 600px;
+        background-position: 49% 0%;
+        background-image: url(pictures/splashbilledemidlertidigt.jpg);
+        margin-top: 0;
         top: 0;
     }
 
+
+
 }
 
-/*SPLASH*/
+/*BURGER MENU*/
 
-#splash {
-    background-size: cover;
-    max-width: none;
-    background-position: 49% 0%;
-    background-image: url(img/billedeparken.jpg);
-    margin-top: 0;
-    top: 0;
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
 }
 
-#splash img {
-    visibility: hidden;
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    /*    position: absolute;*/
+    border-top: solid 1px #286eaf;
+    border-bottom: solid 1px #286eaf;
+    background-color: white;
 }
 
 
+header nav a {
+
+
+    text-decoration: inherit;
+    /*    text-align: center;*/
+    font-family: sans-serif;
+
+
+
+}
 
 
 
@@ -199,7 +211,7 @@ header nav a {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-image: url(pictures/background1.jpg);
+
 
 
 
@@ -231,37 +243,134 @@ header nav a {
 
 }
 
-#sectionwrapper_spons {
+
+
+
+/*FOOTER*/
+
+
+
+#footer {
+    margin-top: 40px;
+
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    justify-content: center;
+    background-image: url(pictures/tifo%20image.png);
+
+}
+
+#spons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    align-self: center;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
     align-items: center;
 
 
 }
 
 
-/*SPONSORATER*/
-
 .carlsberg {
-    flex-basis: 250px;
+    flex-basis: 260px;
+    filter: grayscale(100%)
+}
 
+.carlsberg:hover {
+    flex-basis: 260px;
+    filter: none;
 }
 
 .unibet {
-    flex-basis: 280px;
+    flex-basis: 290px;
+    filter: grayscale(100%)
+}
+
+.unibet:hover {
+    flex-basis: 290px;
+    filter: none;
 }
 
 .fanshop {
-    flex-basis: 310px;
+    flex-basis: 340px;
+    filter: grayscale(100%)
 }
 
-.tandlaegerne {
+.fanshop:hover {
+    flex-basis: 340px;
+    filter: none;
+}
+
+.tandlaegerfrb {
     display: flex;
-    flex-basis: 240px;
+
+    filter: grayscale(100%)
+}
+
+.tandlaegerfrb:hover {
+    display: flex;
+
+    filter: none;
+}
+
+.tandlaegerneoe {
+    display: flex;
+    filter: grayscale(100%)
+}
+
+.tandlaegerneoe:hover {
+    display: flex;
+    filter: none;
+}
+
+
+
+.socialmedia {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: space-around;
+
+}
+
+.socialmedia img {
+    width: 60px;
+}
+
+.sociallogo {
+    flex-basis: 80px;
+}
+
+.footerlogo {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: space-around;
+
+}
+
+.footerlogo img {
+    width: 100px;
+}
+
+.contact_info {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    justify-content: space-around;
 
 }
 
@@ -269,6 +378,22 @@ header nav a {
 
 
 /****GENERALLE INDSTILLINGER SLUT*****/
+
+/****FORSIDE****/
+
+#sectionwrapper1 a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fbfbfb;
+}
+
+#sectionwrapper1 a:hover {
+    color: #0D0D0D;
+}
+
+/****FORSIDE SLUT****/
+
 
 /****OM****/
 
@@ -289,19 +414,28 @@ header nav a {
     margin: 2.4rem;
     padding: 1rem;
     /*    border: solid 4px #286EAF;*/
-    background-color: #fbfbfb;
+    background-color: #5095bf;
 }
 
+
 #om figure {
+
+
     display: flex;
     flex-wrap: nowrap;
-    width: 520px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #om p {
 
-    color: #0d0d0d;
+    color: #fbfbfb;
+}
+
+#om h2 {
+    color: #fbfbfb;
 }
 
 /****OM SLUT****/
@@ -338,18 +472,29 @@ header nav a {
 
 /****GALLERI****/
 
+#galleri .sectionwrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/billedebl%C3%A5.png);
+
+}
+
 #galleri .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    background-image: url(img/billedebl%C3%A5.png);
+
 }
 
 #galleri .col {
-    flex-grow: 1;
-    flex-basis: 1000px;
-    margin: 30px;
+    flex-basis: 80vw;
+    /*    flex-grow: 1;*/
     padding: 1px;
     background-color: #5095bf;
     padding: 15px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
 }
 
 #galleri .col1 {
@@ -365,12 +510,25 @@ header nav a {
     color: #fbfbfb;
 }
 
+/*
 #galleri .col:hover {
     background-image: url(pictures/kampinfo%20image.png);
 }
 
 #galleri .col1:hover {
     background-image: url(pictures/kampinfo%20image.png);
+}
+*/
+
+#galleri a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #fbfbfb;
+}
+
+#galleri a:hover {
+    color: #0D0D0D;
 }
 
 /****GALLERI SLUT****/
@@ -483,8 +641,59 @@ header nav a {
 
 /****ARTIKEL 1 SLUT****/
 
-@media only screen and (min-width:700px) {
-    #splash {
-        background-position: 50% 0%;
-    }
+/****TIFO****/
+
+#tifo .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*    border: solid 10px black;*/
+    /*        margin: 0.5rem;*/
+    padding: 0 0;
+    background-image: url(img/billedebl%C3%A5.png);
+
 }
+
+
+#tifo .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin: 2.4rem;
+    padding: 1rem;
+    /*    border: solid 4px #286EAF;*/
+    background-color: #5095bf;
+}
+
+#tifo .col1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+    /*    border: solid 4px #286EAF;*/
+    background-color: #5095bf;
+
+}
+
+/*
+#tifo figure {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 500px;
+    width: 400px;
+
+}
+*/
+
+#tifo p {
+
+    color: #fbfbfb;
+}
+
+#tifo h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #fbfbfb;
+    border-bottom: solid 3px #fbfbfb;
+}
+
+/****TIFO SLUT****/
