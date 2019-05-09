@@ -386,6 +386,7 @@ header nav a {
     font-size: 1rem;
     font-weight: bold;
     color: #fbfbfb;
+    flex-basis: 400px;
 }
 
 #sectionwrapper1 a:hover {
@@ -393,7 +394,6 @@ header nav a {
 }
 
 /****FORSIDE SLUT****/
-
 
 /****OM****/
 
@@ -605,6 +605,8 @@ header nav a {
     margin-left: 0;
     margin-right: 0;
     padding-left: 40px;
+    background: #5095bf;
+    color: #fbfbfb;
 }
 
 #aretsspiller .sectionwrapper {
@@ -624,7 +626,7 @@ header nav a {
     margin: 2.4rem;
     padding: 1rem;
     /*    border: solid 4px #286EAF;*/
-    background-color: #fbfbfb;
+    background-color: #5095bf;
 }
 
 #aretsspiller figure {
@@ -635,8 +637,10 @@ header nav a {
 }
 
 #aretsspiller p {
-
-    color: #0d0d0d;
+    color: #fbfbfb;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
 }
 
 /****ARTIKEL 1 SLUT****/
