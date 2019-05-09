@@ -101,7 +101,7 @@ a:hover {
 @media only screen and (min-width: 600px) {
 
     #menuknap {
-        display: none;
+        visibility: hidden;
     }
 
     #menu.hidden {
@@ -116,6 +116,16 @@ a:hover {
 
 
     }
+
+    #menu {
+        list-style-type: none;
+        transition: transform .3s;
+        /*    position: absolute;*/
+        border-top: solid 1px #286eaf;
+        border-bottom: solid 1px #286eaf;
+        background-color: white;
+    }
+
 
 
     ul {
@@ -158,41 +168,55 @@ a:hover {
         top: 0;
     }
 
+    header nav a {
+
+
+        text-decoration: none;
+        font-family: sans-serif;
+
+
+
+    }
+
 
 
 }
 
 /*BURGER MENU*/
 
-.hidden {
-    /*    display: none;*/
-    /*    transform: scale(0);*/
-    transform: translateX(-100%);
-    opacity: 0;
-}
+@media only screen and (max-width: 600px) {
 
-#menuknap {
-    display: inline-block;
-}
+    .hidden {
+        /*    display: none;*/
+        /*    transform: scale(0);*/
+        transform: translateX(-100%);
+        opacity: 0;
+    }
 
-#menu {
-    list-style-type: none;
-    transition: transform .3s;
-    /*    position: absolute;*/
-    border-top: solid 1px #286eaf;
-    border-bottom: solid 1px #286eaf;
-    background-color: white;
-}
+    #menuknap {
+        display: inline-block;
+    }
 
-
-header nav a {
-
-
-    text-decoration: inherit;
-    /*    text-align: center;*/
-    font-family: sans-serif;
+    #menu {
+        list-style-type: none;
+        transition: transform .3s;
+        /*    position: absolute;*/
+        border-top: solid 1px #286eaf;
+        border-bottom: solid 1px #286eaf;
+        background-color: white;
+    }
 
 
+    header nav a {
+
+
+        text-decoration: inherit;
+        /*    text-align: center;*/
+        font-family: sans-serif;
+
+
+
+    }
 
 }
 
