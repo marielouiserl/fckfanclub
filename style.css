@@ -69,56 +69,32 @@ a:hover {
 /****GENERALLE INDSTILLINGER SLUT*****/
 
 
-/*BURGER MENU*/
 
-.hidden {
-    /*    display: none;*/
-    /*    transform: scale(0);*/
-    transform: translateX(-100%);
-    opacity: 0;
-}
+/*SPLASH*/
 
-#menuknap {
-    display: inline-block;
-}
+#splash {
 
-#menu {
-    list-style-type: none;
-    transition: transform .3s;
-    /*    position: absolute;*/
+    background-size: cover;
+    max-width: none;
     width: 100%;
-    border-top: solid 1px #286eaf;
-    border-bottom: solid 1px #286eaf;
+    height: 300px;
+    background-position: 49% 0%;
+    background-image: url(pictures/splashbilledemidlertidigt.jpg);
+    margin-top: 0;
+    top: 0;
 }
 
 
-li {}
-
-
-header nav a {
-
-
-    text-decoration: inherit;
-    /*    text-align: center;*/
-    font-family: sans-serif;
-
-
-
+#splash img {
+    visibility: hidden;
 }
-
-#menu img {
-    display: none;
-}
-
-
 
 #logo1 img {
     display: none;
-
-
 }
 
-/*MENU FULD*/
+
+/*INDSTILLINGER FULD SKÆRM*/
 
 
 
@@ -131,6 +107,13 @@ header nav a {
     #menu.hidden {
         transform: translateX(0);
         opacity: 1;
+        height: 15px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+
 
     }
 
@@ -151,9 +134,8 @@ header nav a {
     }
 
     #logo img {
-        /*        position: absolute;*/
         width: 70px;
-        top: 0px;
+        top: 10px;
 
     }
 
@@ -162,27 +144,57 @@ header nav a {
         position: absolute;
         width: 5rem;
         left: 47.5%;
+        top: 10px;
+        ;
+    }
+
+    #splash {
+        background-size: cover;
+        max-width: none;
+        height: 600px;
+        background-position: 49% 0%;
+        background-image: url(pictures/splashbilledemidlertidigt.jpg);
+        margin-top: 0;
         top: 0;
     }
 
+
+
 }
 
-/*SPLASH*/
+/*BURGER MENU*/
 
-#splash {
-    background-size: cover;
-    max-width: none;
-    background-position: 49% 0%;
-    background-image: url(img/billedeparken.jpg);
-    margin-top: 0;
-    top: 0;
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
 }
 
-#splash img {
-    visibility: hidden;
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    /*    position: absolute;*/
+    border-top: solid 1px #286eaf;
+    border-bottom: solid 1px #286eaf;
+    background-color: white;
 }
 
 
+header nav a {
+
+
+    text-decoration: inherit;
+    /*    text-align: center;*/
+    font-family: sans-serif;
+
+
+
+}
 
 
 
@@ -199,7 +211,7 @@ header nav a {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-image: url(pictures/background1.jpg);
+
 
 
 
@@ -231,37 +243,134 @@ header nav a {
 
 }
 
-#sectionwrapper_spons {
+
+
+
+/*FOOTER*/
+
+
+
+#footer {
+    margin-top: 40px;
+
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    justify-content: center;
+    background-image: url(pictures/tifo%20image.png);
+
+}
+
+#spons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    align-self: center;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
     align-items: center;
 
 
 }
 
 
-/*SPONSORATER*/
-
 .carlsberg {
-    flex-basis: 250px;
+    flex-basis: 260px;
+    filter: grayscale(100%)
+}
 
+.carlsberg:hover {
+    flex-basis: 260px;
+    filter: none;
 }
 
 .unibet {
-    flex-basis: 280px;
+    flex-basis: 290px;
+    filter: grayscale(100%)
+}
+
+.unibet:hover {
+    flex-basis: 290px;
+    filter: none;
 }
 
 .fanshop {
-    flex-basis: 310px;
+    flex-basis: 340px;
+    filter: grayscale(100%)
 }
 
-.tandlaegerne {
+.fanshop:hover {
+    flex-basis: 340px;
+    filter: none;
+}
+
+.tandlaegerfrb {
     display: flex;
-    flex-basis: 240px;
+
+    filter: grayscale(100%)
+}
+
+.tandlaegerfrb:hover {
+    display: flex;
+
+    filter: none;
+}
+
+.tandlaegerneoe {
+    display: flex;
+    filter: grayscale(100%)
+}
+
+.tandlaegerneoe:hover {
+    display: flex;
+    filter: none;
+}
+
+
+
+.socialmedia {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: space-around;
+
+}
+
+.socialmedia img {
+    width: 60px;
+}
+
+.sociallogo {
+    flex-basis: 80px;
+}
+
+.footerlogo {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: space-around;
+
+}
+
+.footerlogo img {
+    width: 100px;
+}
+
+.contact_info {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    justify-content: space-around;
 
 }
 
